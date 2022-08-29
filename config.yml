@@ -1,0 +1,22 @@
+server:
+  port: 8080
+logger:
+  loggerfile : "error.log"
+cloud:
+  provider : "aws"
+  cloud_settings :
+    aws :
+      awsendpoint : "http://localhost:4566"
+      awsregion : "us-east-1"
+      awssecretname : "client1/postgres-cred"
+      awscurrent : "AWSCURRENT"
+      awsprofile : "localstack"
+    azure :
+      azureuser : "testuser"
+database:
+  dbdriver: "postgres"
+  dbname: "go_test_db"
+  dbport: 5432
+  dbuser: "username"
+  dbpassword: "password"
+  dbhost: "localhost"

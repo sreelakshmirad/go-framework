@@ -1,0 +1,7 @@
+db_settings:
+  secret: "%s/postgre-dev"
+  driver : "postgres"
+  dbname: "%s_go_test"
+
+
+
